@@ -1,17 +1,42 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import FirstApp from './PrimeraApp';
+// import './index.css';
+
+// const divRoot = document.querySelector("#root");
+
+// ReactDOM.render(<FirstApp saludo="Hola, soy Terry!"/>, divRoot);
+
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CounterApp from './CounterApp';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const appDiv = document.querySelector("#root");
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<CounterApp />,appDiv);
+
+
+
+
+
+
+
+
+
+
+
+// const mySquareNumber = (num) =>{
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             resolve(num*num);
+//         }, 1500);
+//     })
+// }
+
+// const myAsync = async() =>{
+//     const number = await mySquareNumber(4);
+    
+//     return number * 9
+// }
+// console.log(typeof myAsync())
